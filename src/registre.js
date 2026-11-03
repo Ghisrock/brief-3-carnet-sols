@@ -28,7 +28,6 @@ export function trouverParId(observations, id) {
 return observations.find(observations => observations.id === id );
 }
 
-
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
 // { id: 'S11', parcelle: 'P6', texture: 'limoneux', pH: '5,8', etatHumidite: 'humide' }
 // Renvoie un tableau de messages d'erreur, un message par règle non respectée ;
@@ -37,7 +36,38 @@ return observations.find(observations => observations.id === id );
 // · texture présente dans TEXTURES · pH nombre entre 0 et 14 (bornes comprises)
 // · etatHumidite présent dans HUMIDITES. N'ajoutez aucune autre règle que celles-ci.
 export function verifierObservation(saisie, observations) {
-  throw new Error('TODO : coder verifierObservation dans src/registre.js');
+  const Erreur = [];
+  if ( saisie.id ==="") {
+    Erreur.push ("saisie de l'identifant est obligatoire");
+  } else {
+    for ( const obvs of observations) {
+      if ( obvs.id === saisie.id) {
+        Erreur.push ( "l'identifant existe déja");
+      }
+    }
+  }
+  if ( TEXTURES.includes(saisie.texture)) {
+    // La texture est valide
+  } else {
+    Erreur.push("texture invalide");
+  }
+   const P =Number(saisie.pH.replace(',','.'));
+   if (saisie.pH ===""|| isNaN(P) || P < 0 || P > 14) {
+    Erreur.push("Entrez un pH valide entre 0 et 14 ");
+   }
+   if(saisie.parcelle.trim() ===""){
+    Erreur.push("Entrez une parcelle est obligatoirement valide");
+   }
+   if (!HUMIDITES.includes(saisie.etatHumidite)){
+    Erreur.push("Entrez un état d'humidité valide");
+   }
+return Erreur;
+  }
+   // Fabrique l'observation à enregistrer à partir d'une saisie VALIDE : pH devient un nombre.
+export function creerObservation(saisie) {
+    const valide = { ... saisie};
+    valide.pH  = Number(saisie.pH.replace(',','.'));
+    return valide;
 }
 
 // Fabrique l'observation à enregistrer à partir d'une saisie VALIDE : pH devient un nombre.
