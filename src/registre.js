@@ -25,7 +25,9 @@ export function listerObservations(observations) {
 }
 // Renvoie l'observation qui a cet identifiant de point, ou undefined si elle n'existe pas.
 export function trouverParId(observations, id) {
+return observations.find(observations => observations.id === id );
 }
+
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
 // { id: 'S11', parcelle: 'P6', texture: 'limoneux', pH: '5,8', etatHumidite: 'humide' }
