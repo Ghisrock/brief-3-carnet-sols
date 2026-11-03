@@ -4,7 +4,6 @@
 // Renvoie un NOUVEAU tableau avec les observations de cette parcelle (éventuellement vide).
 export function filtrerParParcelle(observations, parcelle) {
   return observations.filter(observation => observation.parcelle === parcelle);
-return resultat;
 }
 
 // Renvoie un NOUVEAU tableau avec les observations de cette texture (éventuellement vide).
