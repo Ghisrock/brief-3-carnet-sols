@@ -11,5 +11,6 @@ const texte = await readFile(chemin, 'utf8');
 
 // Écrit le tableau dans le fichier, au format JSON indenté de 2 espaces.
 export async function enregistrerJson(chemin, enregistrements) {
-  throw new Error('TODO : coder enregistrerJson dans src/stockage.js');
+  const texte2 = JSON.stringify(enregistrements, null, 2);
+  await writeFile(chemin, texte2, 'utf8');
 }
