@@ -1,4 +1,4 @@
-# Dictionnaire des données
+(  # Dictionnaire des données
 
 > Un champ par ligne, d'après `SUJET.md` et le fichier de `donnees/`. La première ligne sert de modèle.
 
