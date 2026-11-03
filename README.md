@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol
 
 ## Prérequis et lancement
 
