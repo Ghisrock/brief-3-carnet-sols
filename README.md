@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol
+✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol .il saisit pour chaque point une observation avec : un id , la parcelle, la texture au toucher ,le pH mesuré et l'état d'état d'humidité.le programme lui affiche la liste de ses observations , permet de flitrer par texture ou parcelle,de trier par pH et d'obtenir une synthèse rapide avec le pH min/max et les points acides à discuter.
 
 ## Prérequis et lancement
 
