@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol .il saisit pour chaque point une observation avec : un id , la parcelle, la texture au toucher ,le pH mesuré et l'état d'état d'humidité.le programme lui affiche la liste de ses observations , permet de flitrer par texture ou parcelle,de trier par pH et d'obtenir une synthèse rapide avec le pH min/max et les points acides à discuter.
+✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol .il saisit pour chaque point une observation avec : un id , la parcelle, la texture au toucher ,le pH mesuré et l'état d'état d'humidité.le programme lui affiche la liste de ses observations , permet de flitrer par texture ou parcelle,de trier par pH et d'obtenir une synthèse rapide avec le pH min/max et les points acides à discuter.l'outil repère des valeurs à discuter, mais ne produit aucun diagnostic de fertilisation.
 
 ## Prérequis et lancement
 
@@ -46,4 +46,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+✏️ * Prénom NOM : Ghislain OBA , compte Github : Ghisrock . Entraide : échange avec KOKO KOUAME RABIN et N'DIAMDI JULES CHRIST , sur la comprehension du projet , comment l'aborder ,sur modifier Observation et la partie renvoie des pH min et max.*
