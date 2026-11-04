@@ -38,7 +38,9 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le carnet repère des valeurs à discuter, mais ne produit aucun diagnostic de fertilisation.*
+✏️ - Les données étant fictives , les résultats ne peuvent pas etre généralisés à des sols réels.
+- Des facteurs importants ( type de sol ,culture ,saison ,date de prélèvement,etc...) ne figurent pas dans les champs et ne sont pas pris en compte.
+- L'échantillon est limité à [N] observations, ce qui ne permet pas de conclusions statiquement solides.
 
 ## Documents
 
@@ -46,4 +48,6 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ * Prénom NOM : Ghislain OBA , compte Github : Ghisrock . Entraide : échange avec KOKO KOUAME RABIN et N'DIAMDI JULES CHRIST , sur la comprehension du projet , comment l'aborder ,sur modifier Observation et la partie renvoie des pH min et max.*
+✏️ *Prénom NOM : Ghislain OBA ,
+    compte Github : Ghisrock . 
+    Entraide : échange avec KOKO KOUAME RABIN et N'DIAMDI JULES CHRIST , sur la comprehension du projet , comment l'aborder ,sur modifier Observation et la partie renvoie des pH min et max.*
