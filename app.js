@@ -74,6 +74,11 @@ async function ajouter(observations) {
 }
 
 
+// Choix 2 : lister.
+function lister(observations) {
+  console.log(`--- Liste des observations (${observations.length}) ---`);
+  console.log(listerObservations(observations));
+}
 
 
 
