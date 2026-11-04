@@ -26,16 +26,49 @@ export function supprimerObservation(observations, id) {
 // Erreurs : identifiant introuvable · champ 'id' (non modifiable) · champ absent de CHAMPS_MODIFIABLES
 //           · valeur refusée par les règles de l'ajout.
 export function modifierObservation(observations, id, champ, valeur) {
-  throw new Error('TODO Bonus : coder modifierObservation dans src/bonus.js');
-}
+  if ( champ === 'id'){
+    return [ "le champ 'id' (non modifiable)"];
+  }
+  let trouve = null;
+  for ( let observation of observations){
+    if( observation.id === id) trouve = observation;
+  }
+  if(trouve===null){
+    return ["identifiant introuvable"];
+  }
+  if (champ ==='pH'){
+    valeur = versNombre(valeur);
+  }
+  let copie = {...trouve};
+  copie[champ]=valeur;
+  let autres = observations.filter(observation => observation.id !== id);
+  let erreurs = verifierObservation(copie,autres);
+  if (erreurs.length > 0){
+    return erreurs;
+  }
+  trouve[champ]=valeur;
+  return[];
+  }
 
 // Renvoie une COPIE triée par pH décroissant. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParPhDecroissant(observations) {
  return [... observations].sort((a,b) => b.pH - a.pH);}
- 
+
 // Renvoie { texture, nombre } pour la texture la plus fréquente, ou null si la liste est vide.
 // En cas d'égalité, la première texture rencontrée l'emporte.
 // Exemple : { texture: 'limoneux', nombre: 4 }
 export function textureLaPlusFrequente(observations) {
-  throw new Error('TODO Bonus : coder textureLaPlusFrequente dans src/bonus.js');
-}
+  if (observations.length === 0)
+    return null;
+  const compt = new Map();
+  for ( const observation of observations){
+    compt.set(observation.texture,(compt.get(observation.texture) || 0)+1);
+  }
+  let meilleur = null;
+  for (const [texture,nombre] of compt){
+    if (meilleur === null || nombre > meilleur.nombre){
+      meilleur = {texture,nombre};
+    }
+  }
+  return meilleur;
+  }
