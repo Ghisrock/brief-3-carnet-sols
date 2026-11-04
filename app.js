@@ -10,6 +10,30 @@ import { SEUIL_PH_A_DISCUTER, compterParTexture, phMinMax, pointsADiscuter } fro
 
 const FICHIER_DONNEES = 'donnees/observations.json';
 
+//--------------- Affichages ------------
+
+function affichagerAccueil() {
+  console.log('============================================');
+  console.log('ferme pédagogique');
+  console.log('============================================');
+}
+
+
+function afficherMenu() {
+  console.log('');
+  console.log('----------MENU----------');
+}
+
+
+
+
+
+
+
+
+
+
+
 async function main() {
   ouvrirSaisie();
   console.log("À compléter : écrivez le menu dans app.js (fiches/3-ajouter-lister.md).");
