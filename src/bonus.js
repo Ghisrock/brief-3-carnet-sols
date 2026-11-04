@@ -26,29 +26,30 @@ export function supprimerObservation(observations, id) {
 // Erreurs : identifiant introuvable · champ 'id' (non modifiable) · champ absent de CHAMPS_MODIFIABLES
 //           · valeur refusée par les règles de l'ajout.
 export function modifierObservation(observations, id, champ, valeur) {
-  if ( champ === 'id'){
-    return [ "le champ 'id' (non modifiable)"];
+const erreurs = [];
+const observation = observations.find((observation) => observation.id === id);
+if (!observation) {
+  erreurs.push("identifiant introuvable");
+}
+if (champ === 'id') {
+  erreurs.push("champ 'id' (non modifiable)");
+}
+if (!CHAMPS_MODIFIABLES.includes(champ)) {
+  erreurs.push("champ absent de CHAMPS_MODIFIABLES");
+}
+let valeurTraitee = valeur;
+
+if (champ === 'pH') {
+  valeurTraitee = versNombre(valeur);
+  if (isNaN(valeurTraitee) || valeurTraitee < 0 || valeurTraitee > 14 )
+    erreurs.push("valeur du pH doit etre compris entre 0 et 14");
   }
-  let trouve = null;
-  for ( let observation of observations){
-    if( observation.id === id) trouve = observation;
-  }
-  if(trouve===null){
-    return ["identifiant introuvable"];
-  }
-  if (champ ==='pH'){
-    valeur = versNombre(valeur);
-  }
-  let copie = {...trouve};
-  copie[champ]=valeur;
-  let autres = observations.filter(observation => observation.id !== id);
-  let erreurs = verifierObservation(copie,autres);
-  if (erreurs.length > 0){
+  if(erreurs.length > 0) {
     return erreurs;
   }
-  trouve[champ]=valeur;
-  return[];
-  }
+  observation [ champ] = valeurTraitee;
+  return [];
+}
 
 // Renvoie une COPIE triée par pH décroissant. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParPhDecroissant(observations) {
