@@ -19,5 +19,6 @@ A partir des 10 observations de données/observation.json
 | la synthèse |affichage des statistique de l'observation |            |               |
 | choix inconnu  | aucune observation |                                |               |
 
+
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
 
