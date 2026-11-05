@@ -14,4 +14,4 @@
 - 'texture': 'sableux' ; 'limoneux' ; 'argileux'
 - 'etatHumidité' : 'sec' ; 'intermediaire' ; 'humide'
 
-**Sources** :   fiche de terrain ;données fictives de observation.json
+**Sources** :   fiche de terrain ;données fictives de observation.json.'SUJET.md'

@@ -15,4 +15,4 @@
 
 **Deux limites du carnet** (une seule observation par point, classes d'exercice, pas de moment du relevé, seuil de 5,5 simple repère…) : (1)une seule observation par point et aucune date de relevé , donc on ne sait pas si l'humidité ou le pH varient dans le temps.(2)le seuil de 5.5 est un simple repère pédagogique , pas un diagnostic,et les classes de texture et d'humidité sont des classes d'exercice.
 
-Sources : fiche de terrain , 'SUJET.md' · Relu par le coach le : ✏️
+Sources : fiche de terrain , 'observation.json' · Relu par le coach le : ✏️

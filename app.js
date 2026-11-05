@@ -7,14 +7,15 @@ import { chargerJson, enregistrerJson } from './src/stockage.js';
 import { HUMIDITES, TEXTURES, ajouterObservation, formaterObservation, listerObservations, trouverParId } from './src/registre.js';
 import { filtrerParParcelle, filtrerParTexture, trierParPh } from './src/recherche.js';
 import { SEUIL_PH_A_DISCUTER, compterParTexture, phMinMax, pointsADiscuter } from './src/synthese.js';
+import { textureLaPlusFrequente } from './src/bonus.js';
 
 const FICHIER_DONNEES = 'donnees/observations.json';
 
 //--------------- Affichages ------------
 
 function afficherAccueil() {
-  console.log('==================================================');
-  console.log('   Ferme pédagogique');
+  console.log('=================================================');
+  console.log('           Ferme pédagogique');
   console.log('==================================================');
 }
 
