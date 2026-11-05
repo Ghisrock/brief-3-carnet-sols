@@ -34,13 +34,22 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Données
 
- ✏️ *Le fichier, le nombre d'observations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), le pH sans unité. Rappelez qu'elles sont fictives.*
+  *Le fichier, le nombre d'observations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), le pH sans unité. Rappelez qu'elles sont fictives.*
+
+
+ Champ          |       contenu                      | Type  | Exemple |
+| --------------| -----------------------------------| ------| ---------
+| `id`          | Identifiant unique                 | texte | S04     |
+|'parcelle'     |   parcelle où se trouve le sol     | texte | P2      |  
+| 'texture'     | classe de texture du sol au toucher|texte  |argileux,sableux,limoneux |
+| 'pH'          | Acidité mesurée du sol             |nombre |compris entre 0 et 14 |
+| 'etatHumidité | Humidité du sol au moment du relévé|texte  |sec ,humide ,intermediaire|
 
 ## Limites
 
  - Les données étant fictives , les résultats ne peuvent pas etre généralisés à des sols réels.
 - Des facteurs importants ( type de sol ,culture ,saison ,date de prélèvement,etc...) ne figurent pas dans les champs et ne sont pas pris en compte.
-- L'échantillon est limité à [N] observations, ce qui ne permet pas de conclusions statiquement solides.
+- L'échantillon est limité à 10 observations, ce qui ne permet pas de conclusions statiquement solides.
 
 ## Documents
 
