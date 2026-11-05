@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol .il saisit pour chaque point une observation avec : un id , la parcelle, la texture au toucher ,le pH mesuré et l'état d'état d'humidité.le programme lui affiche la liste de ses observations , permet de flitrer par texture ou parcelle,de trier par pH et d'obtenir une synthèse rapide avec le pH min/max et les points acides à discuter.l'outil repère des valeurs à discuter, mais ne produit aucun diagnostic de fertilisation.
+l'outil est utiliseé par un technicien agricole ou un conseiller en agronomie lors de ses tournées parcelles.Son besoin est de centraliser rapidement ses relevés de sol .il saisit pour chaque point une observation avec : un id , la parcelle, la texture au toucher ,le pH mesuré et l'état d'état d'humidité.le programme lui affiche la liste de ses observations , permet de flitrer par texture ou parcelle,de trier par pH et d'obtenir une synthèse rapide avec le pH min/max et les points acides à discuter.l'outil repère des valeurs à discuter, mais ne produit aucun diagnostic de fertilisation.
 
 ## Prérequis et lancement
 
@@ -21,7 +21,7 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Fonctionnalités
 
-✏️ *Cochez seulement ce qui marche : `- [x]`.*
+ *Cochez seulement ce qui marche : `- [x]`.*
 
 - [x] Données lues et enregistrées dans `donnees/observations.json`
 - [x] Ajouter une observation, saisies invalides refusées sans arrêter le programme
@@ -34,11 +34,11 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Données
 
-✏️ *Le fichier, le nombre d'observations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), le pH sans unité. Rappelez qu'elles sont fictives.*
+ ✏️ *Le fichier, le nombre d'observations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), le pH sans unité. Rappelez qu'elles sont fictives.*
 
 ## Limites
 
-✏️ - Les données étant fictives , les résultats ne peuvent pas etre généralisés à des sols réels.
+ - Les données étant fictives , les résultats ne peuvent pas etre généralisés à des sols réels.
 - Des facteurs importants ( type de sol ,culture ,saison ,date de prélèvement,etc...) ne figurent pas dans les champs et ne sont pas pris en compte.
 - L'échantillon est limité à [N] observations, ce qui ne permet pas de conclusions statiquement solides.
 
@@ -48,6 +48,6 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM : Ghislain OBA ,
+ *Prénom NOM : Ghislain OBA ,
     compte Github : Ghisrock . 
     Entraide : échange avec KOKO KOUAME RABIN et N'DIAMDI JULES CHRIST , sur la comprehension du projet , comment l'aborder ,sur modifier Observation et la partie renvoie des pH min et max.*
