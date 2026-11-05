@@ -10,14 +10,14 @@ A partir des 10 observations de données/observation.json
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 
-| Action        | Attendu                       | Obtenu               | Testeur       |
-| --------------| ----------------------------- | ---------------------|---------------|
-| ajout valide  |l'observation doit etre ajoutée|                      |               |
-| chaque regle refusée | aucune observation enregistré |               |               |
-| une recherche intriuvable | introuvable |                            |               |
-| chaque tri (pH croissant) |tri avec succès|                          |               |
-| la synthèse |affichage des statistique de l'observation |            |               |
-| choix inconnu  | aucune observation |                                |               |
+| Action        | Attendu                       | Obtenu                            | Testeur       |
+| --------------| ----------------------------- | ----------------------------------|---------------|
+| ajout valide  |l'observation doit etre ajoutée|Le carnet compte 12 observation(s) |  RABIN3       |
+| chaque regle refusée | aucune observation enregistré | Observation refusée        |  RABIN3       |
+| une recherche introuvable | introuvable |  Choix inconnu : « 11 ». Tapez un chiffre du menu      |  RABIN3             |
+| chaque tri (pH croissant) |tri avec succès|  reussi     |  RABIN3          |
+| la synthèse |affichage des statistique de l'observation |    SUCCES        |  RABIN3          |
+| Recherche par texture  | les observations |    succes                   |        RABIN3    |
 
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
